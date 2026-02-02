@@ -2,6 +2,8 @@
 
 A native Sailfish OS client for Gotify, providing real-time push notifications and message management for self-hosted Gotify servers.
 
+| ⚠️ Work in progress
+
 ## Features
 
 - **Real-time Notifications**: Instant push notifications via WebSocket connections
