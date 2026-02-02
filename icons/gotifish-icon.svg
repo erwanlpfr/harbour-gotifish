@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="86"
+   height="86"
+   viewBox="0 0 86 86"
+   version="1.1"
+   id="svg15"
+   sodipodi:docname="gotifish-icon.svg"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview15"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="9.4534884"
+     inkscape:cx="43"
+     inkscape:cy="43"
+     inkscape:window-width="2560"
+     inkscape:window-height="1015"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g14" />
+  <defs
+     id="defs3">
+    <clipPath
+       id="clip-main">
+      <path
+         clip-rule="nonzero"
+         d="M 43 0.300781 C 19.417969 0.300781 0.300781 19.417969 0.300781 43 L 0.300781 84.277344 C 0.300781 85.0625 0.9375 85.699219 1.722656 85.699219 L 43 85.699219 C 66.582031 85.699219 85.699219 66.582031 85.699219 43 L 85.699219 1.722656 C 85.699219 0.9375 85.0625 0.300781 84.277344 0.300781 Z M 43 0.300781 "
+         id="path1" />
+    </clipPath>
+    <!-- Sailfish OS signature gradient -->
+    <linearGradient
+       id="bg-gradient"
+       gradientUnits="userSpaceOnUse"
+       x1="0"
+       y1="0"
+       x2="86"
+       y2="86">
+      <stop
+         offset="0"
+         stop-color="#4EBFE5"
+         stop-opacity="1"
+         id="stop1" />
+      <stop
+         offset="0.5"
+         stop-color="#3AA8D0"
+         stop-opacity="1"
+         id="stop2" />
+      <stop
+         offset="1"
+         stop-color="#2891BB"
+         stop-opacity="1"
+         id="stop3" />
+    </linearGradient>
+    <!-- Wave pattern for fish theme -->
+    <pattern
+       id="wave-pattern"
+       x="0"
+       y="0"
+       width="40"
+       height="20"
+       patternUnits="userSpaceOnUse">
+      <path
+         d="M0,10 Q10,5 20,10 T40,10"
+         stroke="#ffffff"
+         stroke-width="1"
+         fill="none"
+         opacity="0.15"
+         id="path3" />
+    </pattern>
+  </defs>
+  <!-- Background with clip -->
+  <g
+     clip-path="url(#clip-main)"
+     id="g15">
+    <!-- Base gradient background -->
+    <rect
+       x="0"
+       y="0"
+       width="86"
+       height="86"
+       fill="url(#bg-gradient)"
+       id="rect3" />
+    <!-- Wave pattern overlay -->
+    <rect
+       x="0"
+       y="50"
+       width="86"
+       height="36"
+       fill="url(#wave-pattern)"
+       id="rect4" />
+    <!-- Stylized Gopher-Fish hybrid -->
+    <g
+       transform="translate(43, 38)"
+       id="g14">
+      <!-- Fish body (gopher-shaped) -->
+      <ellipse
+         cx="0"
+         cy="0"
+         rx="22"
+         ry="18"
+         fill="#5DCAE8"
+         stroke="#1A5F7A"
+         stroke-width="1.5"
+         id="ellipse4" />
+      <!-- Tail fin -->
+      <path
+         d="M -20,-3 Q -28,-8 -30,-10 Q -28,-5 -30,0 Q -28,5 -30,10 Q -28,8 -20,3 Z"
+         fill="#4BB5D6"
+         stroke="#1A5F7A"
+         stroke-width="1.2"
+         id="path4" />
+      <!-- Top fin -->
+      <path
+         d="M -5,-18 Q -3,-26 0,-28 Q 3,-26 5,-18 Z"
+         fill="#4BB5D6"
+         stroke="#1A5F7A"
+         stroke-width="1.2"
+         id="path5" />
+      <!-- Bottom fin -->
+      <path
+         d="M -8,15 Q -6,20 -4,22 L 4,22 Q 6,20 8,15 Z"
+         fill="#4BB5D6"
+         stroke="#1A5F7A"
+         stroke-width="1.2"
+         id="path6" />
+      <!-- Gopher eye (large characteristic eye) -->
+      <circle
+         cx="8"
+         cy="-3"
+         r="7"
+         fill="#FFFFFF"
+         stroke="#1A5F7A"
+         stroke-width="1.5"
+         id="circle6" />
+      <circle
+         cx="10"
+         cy="-2"
+         r="3.5"
+         fill="#1A5F7A"
+         id="circle7" />
+      <circle
+         cx="11"
+         cy="-3"
+         r="1.5"
+         fill="#FFFFFF"
+         id="circle8" />
+      <!-- Gopher ear -->
+      <!-- Tooth (gopher characteristic) -->
+      <rect
+         x="14"
+         y="8"
+         width="3"
+         height="5"
+         rx="1"
+         fill="#F5F5DC"
+         stroke="#1A5F7A"
+         stroke-width="0.8"
+         id="rect9" />
+      <rect
+         x="17.5"
+         y="8"
+         width="3"
+         height="5"
+         rx="1"
+         fill="#F5F5DC"
+         stroke="#1A5F7A"
+         stroke-width="0.8"
+         id="rect10" />
+      <!-- Notification envelope (small, in mouth) -->
+      <g
+         transform="rotate(-15,76.778509,6.3631896)"
+         id="g11"
+         inkscape:transform-center-x="1.2196502"
+         inkscape:transform-center-y="-4.498863">
+        <rect
+           x="0"
+           y="0"
+           width="12"
+           height="9"
+           rx="0.5"
+           fill="#ffffff"
+           stroke="#1a5f7a"
+           stroke-width="1"
+           id="rect11" />
+        <path
+           d="M 0,0 6,5 12,0"
+           fill="none"
+           stroke="#1a5f7a"
+           stroke-width="1"
+           id="path11" />
+        <!-- Notification dot -->
+        <circle
+           cx="10"
+           cy="2"
+           r="2"
+           fill="#ff6b6b"
+           stroke="#ffffff"
+           stroke-width="0.5"
+           id="circle11" />
+      </g>
+      <!-- Bubbles for underwater effect -->
+      <circle
+         cx="28.899139"
+         cy="-1.0086104"
+         r="1.5"
+         fill="#ffffff"
+         opacity="0.6"
+         id="circle12" />
+      <circle
+         cx="26.745388"
+         cy="4.9434195"
+         r="1"
+         fill="#ffffff"
+         opacity="0.5"
+         id="circle13" />
+      <circle
+         cx="29.043051"
+         cy="-6.7490773"
+         r="1"
+         fill="#ffffff"
+         opacity="0.7"
+         id="circle14" />
+    </g>
+    <!-- Additional decorative wave at bottom -->
+    <path
+       d="M 0,70 Q 21.5,65 43,70 T 86,70 L 86,86 L 0,86 Z"
+       fill="#2891BB"
+       opacity="0.3"
+       id="path14" />
+  </g>
+</svg>
