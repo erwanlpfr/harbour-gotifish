@@ -15,12 +15,12 @@
         <translation>Zur Seite 2</translation>
     </message>
     <message>
-        <source>UI Template</source>
-        <translation>UI-Vorlage</translation>
-    </message>
-    <message>
         <source>Hello Sailors</source>
         <translation>Hallo Matrosen</translation>
+    </message>
+    <message>
+        <source>Gotify</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

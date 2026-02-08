@@ -4,12 +4,15 @@ Summary:    Gotifish - Unofficial client for Gotify
 Version:    0.1
 Release:    1
 License:    LICENSE
-BuildArch:  noarch
 URL:        http://example.org/
 Source0:    %{name}-%{version}.tar.bz2
+
+# >> macros
+%define __provides_exclude_from ^%{_datadir}/.*$
+# << macros
+
 Requires:   sailfishsilica-qt5 >= 0.10.9
-Requires:   libsailfishapp-launcher
-BuildRequires:  pkgconfig(sailfishapp) >= 1.0.3
+BuildRequires:  pkgconfig(sailfishapp) >= 1.0.2
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Quick)
@@ -27,6 +30,9 @@ Short description of my Sailfish OS Application
 %qmake5 
 
 %make_build
+
+# Don't strip, we'll handle debug symbols
+export NO_BRP_STRIP_DEBUG=true
 
 
 %install

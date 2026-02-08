@@ -12,7 +12,7 @@
 # The name of your application
 TARGET = harbour-gotifish
 
-CONFIG += sailfishapp_qml
+CONFIG += sailfishapp
 
 DISTFILES += qml/harbour-gotifish.qml \
     qml/cover/CoverPage.qml \
@@ -35,3 +35,16 @@ CONFIG += sailfishapp_i18n
 # following TRANSLATIONS line. And also do not forget to
 # modify the localized app name in the the .desktop file.
 TRANSLATIONS += translations/harbour-gotifish-de.ts
+
+HEADERS += \
+    gotifyclient.h \
+    healthmodel.h \
+    healthservice.h \
+    networkmanager.h \
+    requeststates.h
+
+SOURCES += \
+    gotifish.cpp \
+    gotifyclient.cpp \
+    healthservice.cpp \
+    networkmanager.cpp
