@@ -14,10 +14,13 @@ TARGET = harbour-gotifish
 
 CONFIG += sailfishapp
 
+QT += qml quick network
+
 DISTFILES += qml/harbour-gotifish.qml \
     qml/cover/CoverPage.qml \
-    qml/pages/FirstPage.qml \
-    qml/pages/SecondPage.qml \
+    qml/pages/Home.qml \
+    qml/settings/instance.qml \
+    qml/settings/instances.qml \
     rpm/harbour-gotifish.changes.in \
     rpm/harbour-gotifish.changes.run.in \
     rpm/harbour-gotifish.spec \
@@ -37,14 +40,14 @@ CONFIG += sailfishapp_i18n
 TRANSLATIONS += translations/harbour-gotifish-de.ts
 
 HEADERS += \
-    gotifyclient.h \
-    healthmodel.h \
-    healthservice.h \
-    networkmanager.h \
-    requeststates.h
+    src/gotifyclient.h \
+    src/healthmodel.h \
+    src/healthservice.h \
+    src/networkmanager.h \
+    src/requeststates.h
 
 SOURCES += \
-    gotifish.cpp \
-    gotifyclient.cpp \
-    healthservice.cpp \
-    networkmanager.cpp
+    src/gotifish.cpp \
+    src/gotifyclient.cpp \
+    src/healthservice.cpp \
+    src/networkmanager.cpp

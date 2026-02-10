@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.6
 import Sailfish.Silica 1.0
 import harbour.org.gotifish 1.0
 
@@ -21,12 +21,7 @@ Page {
   SilicaFlickable {
     anchors.fill: parent
 
-    PullDownMenu {
-      MenuItem {
-        text: qsTr("Show Page 2")
-        onClicked: pageStack.animatorPush(Qt.resolvedUrl("SecondPage.qml"))
-      }
-    }
+    PullDownMenu {}
 
     contentHeight: column.height
 

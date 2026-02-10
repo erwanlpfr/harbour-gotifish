@@ -3,7 +3,7 @@
 #include <QQuickView>
 #include <QScopedPointer>
 #include <QtQuick>
-#include <sailfishapp/sailfishapp.h>
+#include <sailfishapp.h>
 
 #include "gotifyclient.h"
 #include "healthmodel.h"

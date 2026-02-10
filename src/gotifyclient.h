@@ -9,8 +9,7 @@ class GotifyClient : public QObject {
     Q_OBJECT
 
     Q_PROPERTY(QString token READ token WRITE setToken NOTIFY tokenChanged)
-    Q_PROPERTY(QString gotifyUrl READ gotifyUrl WRITE setGotifyUrl NOTIFY
-            gotifyUrlChanged)
+    Q_PROPERTY(QString gotifyUrl READ gotifyUrl WRITE setGotifyUrl NOTIFY gotifyUrlChanged)
 
 public:
     explicit GotifyClient(QObject* parent = nullptr);
