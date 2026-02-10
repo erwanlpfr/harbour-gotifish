@@ -18,7 +18,9 @@ QT += qml quick network
 
 DISTFILES += qml/harbour-gotifish.qml \
     qml/cover/CoverPage.qml \
+    qml/dialogs/AddInstance.qml \
     qml/pages/Home.qml \
+    qml/pages/Settings.qml \
     qml/settings/instance.qml \
     qml/settings/instances.qml \
     rpm/harbour-gotifish.changes.in \
