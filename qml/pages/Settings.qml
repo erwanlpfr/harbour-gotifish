@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.6
 import Sailfish.Silica 1.0
 
 Page {
@@ -19,14 +19,6 @@ Page {
 
       PageHeader {
         title: qsTr("Settings")
-      }
-
-      Button {
-        width: parent.width
-        text: qsTr("Add an instance")
-        onClicked: {
-          pageStack.push(Qt.resolvedUrl(("../dialogs/AddInstance.qml")))
-        }
       }
     }
   }

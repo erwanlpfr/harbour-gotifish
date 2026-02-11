@@ -37,6 +37,25 @@
     </message>
 </context>
 <context>
+    <name>Applications</name>
+    <message>
+        <source>Applications</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Swipe to add</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No instances saved</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>CoverPage</name>
     <message>
         <source>My Cover</source>
@@ -60,10 +79,6 @@
 </context>
 <context>
     <name>Settings</name>
-    <message>
-        <source>Add an instance</source>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
         <source>Settings</source>
         <translation type="unfinished"></translation>

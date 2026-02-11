@@ -1,6 +1,4 @@
-pragma Singleton
-
-import QtQuick 2.0
+import QtQuick 2.6
 import Nemo.Configuration 1.0
 
 QtObject {
@@ -11,9 +9,7 @@ QtObject {
     defaultValue: "[]"
   }
 
-  function getInstances() {
-    return instances
-  }
+  property var instances: JSON.parse(instancesConfig.value)
 
   function addInstance(name, gotifyUrl, token) {
     var newInstances = instances.slice()

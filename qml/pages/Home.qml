@@ -63,4 +63,10 @@ Page {
       }
     }
   }
+
+  onStatusChanged: {
+    if (status === PageStatus.Active) {
+      pageStack.pushAttached("./Applications.qml")
+    }
+  }
 }
