@@ -7,8 +7,6 @@ Page {
   id: root
   allowedOrientations: Orientation.All
 
-  property bool isRemoving: false
-
   Settings.Instances {
     id: instances
   }
@@ -27,7 +25,6 @@ Page {
 
     Column {
       width: page.width
-      spacing: Theme.paddingLarge
       anchors {
         fill: parent
       }
@@ -41,28 +38,38 @@ Page {
         model: instances.instances
 
         delegate: ListItem {
+          id: combobox
           width: parent.width
+
+          Label {
+            id: label
+            text: modelData.name
+            leftPadding: Theme.paddingLarge
+            rightPadding: Theme.paddingLarge
+          }
+          Label {
+            anchors.top: label.bottom
+            text: modelData.gotifyUrl
+            font.pixelSize: Theme.fontSizeExtraSmall
+            leftPadding: Theme.paddingLarge
+            rightPadding: Theme.paddingLarge
+          }
+
           menu: ContextMenu {
             MenuItem {
               text: qsTr("Delete")
               onClicked: {
-                root.isRemoving = true
-                var remorse = Remorse.popupAction(root, modelData.name,
-                                                  function () {
-                                                    instances.removeInstance(
-                                                          index)
-                                                  })
-
-                remorse.canceled.connect(function () {
-                  root.isRemoving = false
-                })
+                var idx = index
+                remorse.execute(combobox, qsTr("Deleting...") + modelData.name,
+                                function () {
+                                  instances.removeInstance(idx)
+                                })
               }
             }
           }
 
-          Components.ApplicationItem {
-            text: modelData.name
-            description: modelData.gotifyUrl
+          RemorseItem {
+            id: remorse
           }
         }
       }

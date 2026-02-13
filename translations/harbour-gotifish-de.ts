@@ -43,15 +43,19 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Swipe to add</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>No instances saved</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Add an application</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Swipe down to add an application</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
