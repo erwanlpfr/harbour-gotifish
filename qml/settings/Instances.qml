@@ -2,41 +2,27 @@ import QtQuick 2.6
 import Nemo.Configuration 1.0
 
 QtObject {
-  id: instancesManager
-
-  property ConfigurationValue instancesConfig: ConfigurationValue {
-    key: "/apps/harbour-gotifish/instancesJson"
+  property ConfigurationValue clientsConfig: ConfigurationValue {
+    key: "/apps/harbour-gotifish/clientsJson"
     defaultValue: "[]"
   }
 
-  property var instances: JSON.parse(instancesConfig.value)
+  property var clients: JSON.parse(clientsConfig.value)
 
-  function addInstance(name, gotifyUrl, token) {
-    var newInstances = instances.slice()
-    newInstances.push({
-                        "name": name,
-                        "gotifyUrl": gotifyUrl,
-                        "token": token
-                      })
-    instancesConfig.value = JSON.stringify(newInstances)
-    instancesConfig.sync()
+  function addClient(gotifyUrl, token) {
+    var _clients = clients.slice()
+    _clients.push({
+                    "gotifyUrl": gotifyUrl,
+                    "token": token
+                  })
+    clientsConfig.value = JSON.stringify(_clients)
+    clientsConfig.sync()
   }
 
-  function removeInstance(index) {
-    var newInstances = instances.slice()
-    newInstances.splice(index, 1)
-    instancesConfig.value = JSON.stringify(newInstances)
-    instancesConfig.sync()
-  }
-
-  function updateInstance(index, name, gotifyUrl, token) {
-    var newInstances = instances.slice()
-    newInstances[index] = {
-      "name": name,
-      "gotifyUrl": gotifyUrl,
-      "token": token
-    }
-    instancesConfig.value = JSON.stringify(newInstances)
-    instancesConfig.sync()
+  function removeClient(index) {
+    var _clients = clients.slice()
+    _clients.splice(index, 1)
+    clientsConfig.value = JSON.stringify(_clients)
+    clientsConfig.sync()
   }
 }

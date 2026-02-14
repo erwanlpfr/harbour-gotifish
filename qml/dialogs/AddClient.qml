@@ -4,7 +4,7 @@ import "../settings" as Settings
 
 Dialog {
   canAccept: nameInput.text != "" && gotifyUrlInput.text != ""
-             && tokenInput.text
+             && userNameInput.text != "" && passwordInput.text != ""
 
   Settings.Instances {
     id: instances
@@ -14,7 +14,7 @@ Dialog {
     width: parent.width
 
     DialogHeader {
-      title: qsTr("Add an application")
+      title: qsTr("Add a client")
       acceptText: qsTr("Save")
       cancelText: qsTr("Cancel")
     }
@@ -22,7 +22,7 @@ Dialog {
     TextField {
       id: nameInput
       focus: true
-      label: qsTr("Name")
+      label: qsTr("Client name")
       placeholderText: qsTr("For display")
     }
 
@@ -33,16 +33,22 @@ Dialog {
     }
 
     TextField {
-      id: tokenInput
-      label: qsTr("Token")
-      placeholderText: qsTr("Generated in your dashboard")
+      id: userNameInput
+      label: qsTr("Username")
+      placeholderText: qsTr("Client username")
+    }
+
+    TextField {
+      id: passwordInput
+      label: qsTr("Password")
+      placeholderText: qsTr("Client password")
     }
   }
 
   onDone: {
     if (result == DialogResult.Accepted) {
-      instances.addInstance(nameInput.text, gotifyUrlInput.text,
-                            tokenInput.text)
+
+      // TODO : check URL + create client + save token
     }
   }
 }

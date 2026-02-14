@@ -16,9 +16,9 @@ Page {
 
     PullDownMenu {
       MenuItem {
-        text: qsTr("Add an application")
+        text: qsTr("Add a client")
         onClicked: {
-          pageStack.push(Qt.resolvedUrl("../dialogs/AddInstance.qml"))
+          pageStack.push(Qt.resolvedUrl("../dialogs/AddClient.qml"))
         }
       }
     }
@@ -30,12 +30,12 @@ Page {
       }
 
       PageHeader {
-        title: qsTr("Applications")
+        title: qsTr("Clients")
       }
 
       Repeater {
-        visible: instances.instances.length > 0
-        model: instances.instances
+        visible: instances.clients.length > 0
+        model: instances.clients
 
         delegate: ListItem {
           id: combobox
@@ -43,13 +43,13 @@ Page {
 
           Label {
             id: label
-            text: modelData.name
+            text: modelData.gotifyUrl
             leftPadding: Theme.paddingLarge
             rightPadding: Theme.paddingLarge
           }
           Label {
             anchors.top: label.bottom
-            text: modelData.gotifyUrl
+            text: modelData.token
             font.pixelSize: Theme.fontSizeExtraSmall
             leftPadding: Theme.paddingLarge
             rightPadding: Theme.paddingLarge
@@ -62,7 +62,7 @@ Page {
                 var idx = index
                 remorse.execute(combobox, qsTr("Deleting...") + modelData.name,
                                 function () {
-                                  instances.removeInstance(idx)
+                                  instances.removeClient(idx)
                                 })
               }
             }
@@ -76,9 +76,9 @@ Page {
     }
 
     ViewPlaceholder {
-      enabled: instances.instances.length === 0
-      text: qsTr("No instances saved")
-      hintText: qsTr("Swipe down to add an application")
+      enabled: instances.clients.length === 0
+      text: qsTr("No clients saved")
+      hintText: qsTr("Swipe down to add a client")
     }
   }
 }
